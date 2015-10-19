@@ -76,7 +76,7 @@
                             <constraint firstItem="C5D-ky-e3v" firstAttribute="top" secondItem="bJK-Fd-fvM" secondAttribute="bottom" constant="4" id="sg1-Yx-Qd4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="qgE-dB-GUR"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="qgE-dB-GUR"/>
                     <connections>
                         <outlet property="lblVersion" destination="had-Gl-6qC" id="eb8-dD-eRv"/>
                     </connections>
@@ -125,7 +125,10 @@
                             <constraint firstItem="uXH-29-FNU" firstAttribute="top" secondItem="UNN-4O-p65" secondAttribute="bottom" id="sdp-KT-Swq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Status" id="zou-hW-beK"/>
+                    <tabBarItem key="tabBarItem" title="Status" image="status" id="zou-hW-beK"/>
+                    <connections>
+                        <outlet property="lblMemory" destination="V6c-X9-SO9" id="1TI-XM-d9p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYa-Oc-MVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -643,7 +646,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calculator" id="lnx-Cx-bij"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="calc" id="lnx-Cx-bij"/>
                     <connections>
                         <outlet property="lblDisplayValue" destination="czD-Sq-26r" id="I9s-8l-riL"/>
                     </connections>
@@ -655,5 +658,8 @@
     </scenes>
     <resources>
         <image name="Calculator" width="100" height="100"/>
+        <image name="about" width="22" height="22"/>
+        <image name="calc" width="22" height="22"/>
+        <image name="status" width="22" height="22"/>
     </resources>
 </document>

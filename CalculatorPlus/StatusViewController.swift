@@ -11,11 +11,9 @@ import UIKit
 class StausViewController: UIViewController {
 
     @IBOutlet weak var lblMemory: UITextView!
-    var cBrain = CalculatorBrain() //() -> 物件初始化
     
     override func viewWillAppear(animated: Bool) {
         if let prog = NSUserDefaults.standardUserDefaults().arrayForKey("history"){
-            cBrain.program = prog
             if(prog.count == 0){
                 lblMemory.text = "The memory is empty."
             }else{
