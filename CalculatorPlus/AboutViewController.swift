@@ -15,7 +15,7 @@ class AboutViewController: UIViewController {
     }
     
     @IBAction func viewHelp() {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://mlf.twbbs.org/work/calculatorPlus/")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://mlf.twbbs.org/work/calculatorPlus/index.html#help")!)
     }
     @IBOutlet weak var lblVersion: UILabel!
     override func viewDidLoad() {
